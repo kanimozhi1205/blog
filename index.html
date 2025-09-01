@@ -1,0 +1,117 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML & CSS Foundations</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background-color: hsl(47, 88%, 63%);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 16px;
+    }
+    .card {
+      width: 100%;
+      max-width: 430px;
+      background-color: white;
+      border: 2px solid #000;
+      border-radius: 10px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+   
+    .learning {
+      margin: 16px;
+      padding: 8px 12px;
+      color: black;
+      background-color: hsl(47, 88%, 63%);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      align-self: flex-start;
+      transition: background-color .2s;
+    }
+    .learning:hover {
+      background-color: hsl(47, 89%, 53%);
+    }
+    .des {
+      padding: 0 16px 24px;
+    }
+    .des h3 {
+      margin: 12px 0 6px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #555;
+    }
+    .des h1 {
+      margin: 4px 0 12px;
+      font-size: 1.6rem;
+      line-height: 1.1;
+    }
+    .des p {
+      margin: 0 0 16px;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      color: #333;
+    }
+    .author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 0 16px 16px;
+      flex-wrap: wrap;
+    }
+    .author img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+    }
+    .author-name {
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 500px) {
+      .des h1 {
+        font-size: 1.35rem;
+      }
+      .learning {
+        margin-left: 0;
+      }
+      .author {
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    
+      <img src="assets/images/illustration-article.svg" alt="Article illustration" style="width: 400; padding: 23px; border-radius: 10px;">
+   
+    <button class="learning">Learning</button>
+    <div class="des">
+      <h3>Published 21 Dec 2023</h3>
+      <h1>HTML & CSS Foundations</h1>
+      <p>These languages are the backbone of every website, defining structure, content and presentation.</p>
+      <div class="author">
+        <img src="assets/images/image-avatar.webp" alt="Greg Hooperd avatar">
+        <div class="author-name">Greg Hooperd</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
